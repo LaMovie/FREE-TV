@@ -1,70 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<HTML lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reproductor de Video Aleatorio</title>
+         <meta charset="UFT-8">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
-body {
-    background: #000;
-    font-family: 'Lacquer', cursive;      
+body{
+   background-color: black;
+}  
+#Iframe {
+    background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyvbv5PvF2z-3a0dvUeqDuVJ04XwNfV_RJjt1mOvNSkf_vB6v1Pi4xfdRud01L-Mo6d1McJFzb3c_YnHedPqyXkG5Lg0cSL6ZkwaeiIWbd5P2KUcuzuXXY8aiA_ECGHxQsDXRLrvy2S_lq-DW3EyW0CXKWqtdpo5t-lLV4woSf7rzVomkg0K4fGOjV/s800/Media_230118_212154.gif);
+    border-radius: 10px;
+}  
+.video-player {
+  max-width: 640px;
+  margin: 0 auto;
 }
-#video-container {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
+
+.video-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: black;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight:bold;
 }
-#random-video {
-    width: 100%;
-    height: auto;
+
+.video-list li {
+  margin-bottom: 10px;
+  font-weight: bold; 
+  background: linear-gradient(to right, black, lightgreen, black);
+  display: block;
+  padding: 10px;
+  border-radius:50px;
+  color:black; 
+  box-shadow: 0 01em rgba(0,0,0,0.2);             
+  transition: 1s;
 }
-#X {
-    color: blue;
-    text-align: center;
+ul li:nth-child(odd):hover{
+    padding-left: 20%;
+    transform: perspective(500px)rotateY(55deg); 
+    background: blue;           
+}
+ul li:nth-child(even):hover{
+    padding-right: 20%;
+    transform: perspective(500px)rotateY(-55deg); 
+    background: blue;         
+}
+#opaco{
+    opacity:0.5;
+}
+#Div {
+    color: #000;
+}
+ #Div:hover {
+     color: #fff;
+}
+a {
+    text-decoration: none;
 }
 </style>
 </head>
-<body>
-<div id="video-container">
-    <video id="random-video" width="600" controls preload="metadata">
-        Tu navegador no soporta la etiqueta de video.
-    </video>
-</div></br>
+<body> 
 
-<h3 id="X">"CINEOPOLIS Es una sala de Cine original de La Movie De Joe totalmente gratis y en español"</h3>
+     <div class="video-player">  
+  <iframe id="Video" src="https://tinyurl.com/24qc29kr" style="width: 100%;height: 200px; aspect-ration:6/19" frameborder="0" allowfullscreen="true" allow="encrypted-media" name="WILLOW"></iframe>
+  
+ 
+  <ul class="video-list">
+<li><a href="https://tinyurl.com/24qc29kr" target="WILLOW"><div id="Div">BORDERLANDS</div></a></li>
 
-<script>
-    window.onload = function() {
-        var videos = [
-            'https://tinyurl.com/2djbkd7h',
-            'https://tinyurl.com/24gkpdou',
-            'https://tinyurl.com/24qc29kr'
-        ];
-
-        function getRandomTime(duration) {
-            return Math.floor(Math.random() * duration);
-        }
-
-        function loadRandomVideo() {
-            var randomIndex = Math.floor(Math.random() * videos.length);
-            var randomVideo = videos[randomIndex];
-            var videoElement = document.getElementById('random-video');
-            videoElement.src = randomVideo;
-
-            videoElement.onloadedmetadata = function() {
-                var randomTime = getRandomTime(videoElement.duration);
-                videoElement.currentTime = randomTime;
-                videoElement.play();
-            };
-        }
-
-        loadRandomVideo();
-
-        document.getElementById('random-video').addEventListener('ended', function() {
-            loadRandomVideo();
-        });
-    };
-</script>
+  <li><a href="https://tinyurl.com/24gkpdou"  target="WILLOW"><div id="Div">EL CUERVO</div></a></li>
+  
+    <li><a href="https://lamovievive.blogspot.com/p/plus-tv.html"><div id="Div">📺 PLUS TV 📺</div></a></li>
+    
+    <li><a href="https://lamovievive.blogspot.com/p/pelis-face.html"><div id="Div">🎥 PELIS FACE 🎥</div></a></li>
+               
+  </ul>
+</div>                         
+                     
+            <center>
+        <img id="opaco" onclick='Filtro()' src="https://da.gd/LwEOu2"/>
+            
+                 
 </body>
-</html>
+</html>   
+    
+      
+<!--https://drive.google.com/file/d/19UyXliPye0f57bE7wwLfr26HiA7gDkEm/preview-->
+
+<!--https://drive.google.com/file/d/16tUigPI_Uzt-QgjYIG2lGIaJOPud64pF/preview-->
+ 
