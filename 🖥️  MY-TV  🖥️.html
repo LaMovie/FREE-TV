@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+body{
+    background: black;
+}     
+.cont{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(70px, 1fr));
+    gap: 20px;
+}
+.cont img{
+    width: 100%;
+    border-radius: 8px;
+    width: 100%; height: auto;
+    box-sizing: box-shadow;
+    transition: 1.5s;
+    border: 2px solid blue;
+    box-shadow: 0 0 30px blue;
+}
+.cont img:hover{
+    transform: scale(2) perspective(500px)rotateY(50deg);
+    padding-left: 5px;
+    background: orange;
+    border: 3px solid #4f9;
+    box-shadow: 0 0 30px #4f9;
+}
+.cont:hover img:not(:hover){
+    scale: .8;
+    filter: grayscale(1) blur(1px);
+}
+.ico-1{
+    display: grid;
+    border-radius: 20px;
+    background: gold;
+    padding: 5px;
+    width: 40%;  
+    gap: 6px;  
+}
+.ico-2{
+    display: grid;
+    border-radius: 20px;
+    background: red;
+    padding: 5px;
+    width: 40%;  
+    gap: 6px;  
+}
+a {
+    color: #aaa;
+    font-weight: bold;
+}
+.ico-1:hover{
+    transform: scale(1.5);
+}
+.ico-2:hover{
+    transform: scale(1.5);
+}
+#Box {
+        opacity: .5;
+    
+  &:hover {
+        scale: 1.5; 
+     }
+}
+</style>
+
+<style>
+.puff-in-hor {
+	-webkit-animation: puff-in-hor 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-hor 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+@-webkit-keyframes puff-in-hor {
+  0% {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-hor {
+  0% {
+    -webkit-transform: scaleX(2);
+            transform: scaleX(2);
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+#H {
+    color: gold;
+    opacity: .9;
+    text-align: center;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+  <h2 id ="H">🍿 FREE TV 🍿</h2>
+
+     <div class="puff-in-hor">
+
+      <div onclick="playA()" class="cont">
+
+<a href="go:DARK-PLAY"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTmsSiqyNdcUDXe4LG0iHCEwj2AwzM7hDH3WQTkp2QA3YdzcTNTJUDixaVPF3_fHm_rQE_wMr5fhIeXVWo0He1Llx-n7hbZehayIjZcLsTUqClEN1DM46EM9Q9Bt6cRqKUlabmX8xpHEaYw5P9neNJT2Q8yDetjMvZN2k9fhkQfUSubjfdVqIxWKecduE/s224/image_search_1722220506854.jpg"/></a>
+
+<a href="go:Box-Tv"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_oLdziH9z4qvQMVQep368yK83rkikO3js7vXSY8Zs6DKiYaEbo9AjeUJqn-O64p1BnVZ5NP9ogGdqMyXI1ECvKI7DqwqntD_HQk4ZdRD1hkvyZKsImWHPPQvQpCYnerjQ24FnP38jJk2jdI9JJTzvkv9n5LBY9Z-9vRHWRyx7Q5MCLY9McKEuZCqCS2Q/w200-h180/image_downloader_1700209016501.png"/></a>
+
+<a href="go:SFNTV"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvjbQQPPkrsDu3lLFEOuLm793Im5hhHNVZiULdEtcq8n-3otRFPTB9KFDHi6Y1ujBLr9BbBbZHrrTPNgEUmW4qyNhEoupw43FiLZA-1RyEVIkiv2CikoLR5rHJflEiNILx3sKHmikjt53m9jqyAjf_uNJl6ONXBLZWbVNYZqvCco9LNJn9-GFDoSqwSSc/w144-h144/image_downloader_1696258729392_copy_400x400_copy_200x200_copy_100x100.jpg"/></a>
+
+<a href="go:TV-1"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAda5JZLj6pv8rSWlTlnLeFHKH-FyIDyb7a2PMv7-s5tIi_1c6bxOidmjHHrPuH2kADOojScfswOsqoqsLEwFudmWsfeG_tvWjSMWie6fxxh8Hntq6rnZDXCuUTcVwaNnaB2ubq3mY4f_-UtHYlq34-9KQrYb8GvBaFXLsgSbTDCJS0l8928BEi0aR/s1600/image_downloader_1670777020236_300x300.jpg"/></a>
+
+<a href="go:AIDA-TV"><img class="All" src="https://da.gd/R0SPFh"/></a>
+
+<a href="go:X-Tv"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh75_n5qmOgHTmtA_gg46-UdZ_NTyWzwZvHnKhn2UTy8iuGinpaWNFH_WyP12Hk2NEruNCUk9K4yqrG35HGN7tPBugybOc5Y0l4WL-zdIbroLDwupOK7QSCAhh1viT0uYSn35EYlnkbs0L4Q_U62Hip-tV4anP-n92ht6lt02N9q7ylm7cQyJvJw4wCCY4/w160-h160/image_downloader_1697383819159_copy_400x400.jpg"/></a>
+
+<a href="go:BASSNATION"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguqEd5tIf6N-9JG4cAOu72s3DVg2eQ_1U7bt6PQ87eathS-NxwmwOv3E00ucwBtcpfTSep4fxFWQyqrKSsgPXY9QbyLnbDVmuzkgMmTSt2pvo14zBq-S2iSxeq0BtCvqtdZuvgSyvV59yXI0gFcGCFSkWjOgYooai2y2zfC00oyypL4AgD3U7_xgEQUQ/s225/image_search_1729650505688.jpg"/></a>
+
+<a href="go:IPTV"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkVlCgxb9f-ZRmAK2Xh9nXbGpAldm1s38kuvdBUCJ02mbom_2amu_-QHBoa_Xn1_Ntdi0fNUzBqyk4bx6sKqMecQqsmRNXDSjiO3k-QWPqxnNhTSDX3MFDVF6TkLZjEkMd1jzPxZcpq9DU3Rgj0hslsLpzve7RErGO5DIDBnkTLZBy1J3fAckdXbLevA/s400/image_search_1729649882828_copy_400x400.jpg"/></a>
+
+<a href="go:PLUTO-TV"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXj9MYInGjJXQTeQHdNcgTt3-sQEUpKBnY38BrQ7IBjPudFul9IL4a-R5tPWZQosNkTQPgr2WhYisS-6WIqtwDuQGCY_-wzMvR6bGoKUg03FBAklH50UuaQ7K0iBcMOe9YYVmvXJxyZ8AuJZeK6NDaLFiv3o9EZI66QULOxvNWEPVS7vAZ_dw2wsvW1g/s1200/image_search_1729649824690.png"/></a>
+
+<a href="go:EXPUS"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnlq_bZvaNCPyBLh22dVVK4_dX1Pg8BD5WVE8wJKydERHvGxvuRF1Qy9_ZxM4a0nUYYluHGQO6qbarrGBCBPFsci5W2jGoKLjf_KuqY6QBg2aKLPcDQrBeXn7w01Bthrj9SVPW8WuAhQqckub3WzNPWxNxnvd6GDf3TomOS_i8sLalbzfQ60Ti84O5/w163-h136/PicsArt_07-14-04.09.30_copy_100x100.png"/></a>
+
+<a href="go:DATABASE"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBKuEEfaUqGFtoZ-bHBix0uqputK3LQKpUFXomfwXhfkrKM1s__z30VSPG6UeOS-BA4796ZCLRAwmshsPMh4lSWlhvdy2_hoIBdOOOBJ37KQ7QIcXrXIQbWIMMsOwozhqaueEX7xboFqd-Q636KSIxf7YsqrOTCBvL18J8zTsFImkTcIB-cKNRz4oJl0Q/w150-h150/image_downloader_1697051003525.jpg"/></a>
+
+<a href="go:DALEPLAY"><img class="All" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdEuK_qourTnNrs_3jm4HUQGqS2WEqK9eyPBgeG2FrlLBjfRJllrCOXepxQ95y0E8yxkEGuxFfqJW0zLHUPA8LVBKVZ5YgkpZ51lwq9el_wLKKepJyn_PAVC6o4Cd3F5Y4seRZSRwD_SsO9fQ_F8TFcR2MKOYa3uH2FugyPL2aKyjaO9XrotpzZ_s_Fg/s200/image_search_1729649648115.jpg"/></a>
+           </div>
+
+      </div><br/><br/><br/><br/>    
+          
+            <center>
+       <h3 id="Box">⚙️</h3>  
+            
+      <div onclick="playP()">
+      
+     <div class="ico-2"><a href="https://lamovievive.blogspot.com/?m=1">FILMS</div>
+           <br/>
+     
+              </div>   
+         
+         
+<audio id="A" src="https://cdn-cf.vidyard.com/uploads/3940821/govideo/e554dde0-90c7-11ee-8ba3-df4e4260a155.mp4"></audio>
+
+<audio id="P" src="https://cdn-cf.vidyard.com/uploads/3940821/govideo/13e83770-8f2d-11ee-bbe1-5107ab9af334.mp4"></audio>        
+                    
+<script>
+function playA(){
+   var audio =
+document.getElementById('A');
+      audio.play();
+}
+
+function playP(){
+    var audio = 
+document.getElementById('P');
+      audio.play();
+}
+</script>
+
+<script>
+
+  <!-- MULTIPLES COLORES SHADOW -->
+   document.getElementById('Box').addEventListener('click', function() {
+      var elementos = document.getElementsByClassName('All');
+      for (var i = 0; i < elementos.length; i++) {
+        var colorAleatorio = '#' + Math.floor(Math.random()*16777215).toString(16); // Generar un color aleatorio en formato hexadecimal
+        elementos[i].style.boxShadow = '5px 5px 5px ' + colorAleatorio;
+      }
+    });
+    
+ <!-- MULTIPLES COLORES BORDER -->
+   document.getElementById('Box').addEventListener('click', function() {
+      var elementos = document.getElementsByClassName('All');
+      for (var i = 0; i < elementos.length; i++) {
+        var colorAleatorio = '#' + Math.floor(Math.random()*16777215).toString(16); // Generar un color aleatorio en formato hexadecimal
+        elementos[i].style.border = '5px solid ' + colorAleatorio;
+      }
+    });
+</script> 
+
+</body>
+</html> 
+
+
+ 
